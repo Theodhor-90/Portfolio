@@ -1,0 +1,117 @@
+@media only screen and (max-width: 950px) {
+  .navbar-right{
+    visibility: hidden;
+  }
+  .burger{
+    visibility: visible;
+  }
+  .mobile{
+    width: 100%;
+  }
+  .column-mobile{
+    flex-direction: column;
+  }
+  .half:first-child{
+    margin-bottom: 50px;
+  }
+  .quarter-mobile{
+    width: 24%;
+  }
+  .skills-left, .skills-right{
+    min-height: 350px;
+    border: 0;
+  }
+  .column-reverse-mobile{
+    flex-direction: column-reverse;
+  }
+  .v-margin-mobile{
+    margin: 10px 0;
+  }
+  .dancing-bold{
+    font-size: 20px;
+  }
+  .f-t{
+    font-size: 17px;
+  }
+  .fw{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .contact-image{
+    width: 50px;
+    height: 50px;
+  }
+  .yahoo{
+    width: 50px;
+    height: 40px;
+  }
+  .dancing-bold{
+    font-size: 14px;
+    width: 120px;
+  }
+  .f-t{
+    font-size: 12px;
+  }
+  .column-phone{
+    flex-direction:column;
+  }
+  .row-phone{
+    flex-direction: row;
+  }
+  .phone-content{
+    width: 100%;
+    max-width: 450px;
+    height: 155px;
+  }
+  .phone-links{
+    width: 25%;
+    height: 100%;
+    margin-right: 10px;
+  }
+  .phone-text{
+    width: 65%;
+    margin-left: 10px;
+  }
+  .project-image{
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+  }
+
+  .image-container{
+    width: 100%;
+  }
+  .project-container{
+    padding: 10px 0;
+    width: 100%;
+  }
+  .contact-container{
+    height: 100px;
+    width: 90%;
+  }
+  .intro{
+    font-size: 25px;
+  }
+  .project-link-s{
+    font-size: 12px;
+  }
+  .tool-container, .flip-container{
+    height: 60px;
+    width: 60px;
+  }
+  .frames-container{
+    transform: scale(0.80);
+  }
+  .project-link{
+    transform: scale(0.9);
+  }
+  .navbar{
+    border-left: 0;
+    border-right: 0;
+  }
+  .fw{
+    width: 100%;
+  }
+}

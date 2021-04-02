@@ -1,0 +1,91 @@
+.skills{
+  margin: 25px auto;
+  max-width: 1200px;
+  min-height: 800px;
+}
+
+.skills-title{
+  background-color: var(--regular);
+  color: var(--back);
+}
+
+.skills-left, .skills-right{
+  width: 50%;
+  min-height: 650px;
+}
+
+.skills-left{
+  border-right: 1px solid grey;
+}
+
+.third{
+  width: 33%;
+}
+.quarter{
+  width: 25%;
+}
+
+.flip-container{
+  width: 85px;
+  height: 85px;
+  perspective: 1000px;
+  background-color: white;
+}
+
+.flip{
+  position: relative;
+  width: 65%;
+  height: 65%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip {
+  transform: rotateY(180deg);
+}
+
+.flip-image-container, .flip-text {
+  position: absolute;
+  -webkit-perspective: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
+  visibility:visible;
+  backface-visibility: hidden;
+}
+
+.flip-text {
+  transform: rotateY(180deg);
+  color: black;
+}
+
+.tool-container{
+  height: 85px;
+  width: 85px;
+  position: relative;
+  background-color: white;
+}
+
+.tool-container:hover .tool-image-container{
+  opacity: 0;
+  transform: scale(1.2);
+}
+
+.tool-container:hover .tool-text-container{
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.tool-image-container{
+  position: absolute;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.tool-text-container{
+  position: absolute;
+  opacity: 0;
+  transition: all 1s;
+  font-size: 12px;
+  color: black;
+}

@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box;
+  transition: transform 0.3s, color 0.3s, background-color 0.3s, width 0.3s;
+}
+
+html, body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  src: url(./../media/Roboto-Bold.ttf);
+  font-family: Roboto-Bold;
+}
+@font-face {
+  src: url(./../media/Roboto-Medium.ttf);
+  font-family: Roboto-MediumItalic;
+}
+@font-face {
+  src: url(./../media/Roboto-Light.ttf);
+  font-family: Roboto-Light;
+}
+@font-face {
+  src: url(./../media/LibreBaskerville-Bold.ttf);
+  font-family: DancingScript-SemiBold;
+}
+
+.dancing-bold{
+  font-family: DancingScript-SemiBold;
+  font-size: 30px;
+}
+
+:root{
+  --back: white;
+  --regular: black;
+}
+
+body{
+  background-color: var(--back);
+  overflow-x: hidden;
+}
+
+div{
+  color: var(--regular);
+  font-family: Roboto-Light;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.around{
+  justify-content: space-around;
+}
+
+.between{
+  justify-content: space-between;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.centralizer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centralized{
+  width: 90%;
+  padding: 10px 0;
+}
+
+.flex-wrapper{
+  flex-wrap: wrap;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.fw{
+  width: 100%;
+}
+
+.fh{
+  height: 100%;
+}
+
+.circular{
+  border-radius: 50%;
+}
+
+.v-padding-small{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.v-padding-medium{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.v-margin-small{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.v-margin-medium{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.border-regular{
+  border: 1px solid var(--regular);
+}
+
+.back-back{
+  background-color: var(--back);
+}
+
+.absolute{
+  position: absolute;
+}
+
+.zoom-in{
+  transform: scale(0);
+}
+
+.zoom-out{
+  transform: scale(1);
+}
+
+.disabled{
+  pointer-events: none;
+  font-family: Roboto-Bold;
+}
+
+.no-default{
+  text-decoration: none;
+  color: var(--regular);
+}
+
+.p-25{
+  padding: 25px 0;
+}
+
+.p-10{
+  padding: 10px 0;
+}
+
+.p-h-10{
+  padding: 0 10px;
+}
+
+.f-t{
+  font-size: 25px;
+}

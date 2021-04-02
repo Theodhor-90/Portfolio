@@ -1,0 +1,109 @@
+.navbar{
+  max-width: 1200px;
+  height: 75px;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+  z-index: 2;
+  background-color: var(--back);
+}
+
+.nav-mobile{
+  max-width: 1200px;
+  height: 75px;
+  border-bottom: 2px solid grey;
+  z-index: 1;
+  background-color: var(--back);
+}
+
+.intro{
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 150px;
+  font-size: 40px;
+  border-bottom: 2px solid grey;
+  font-family: Roboto-MediumItalic;
+  text-align: center;
+}
+
+.nav-container{
+  max-width: 1200px;
+  height: 75px;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  position: sticky;
+  z-index: 1
+}
+
+.burger-active .nav-mobile{
+  transform: translateY(75px);
+}
+
+.navbar-left{
+  margin-left: 50px;
+  background-color: var(--back);
+}
+
+.navbar-right div, .nav-mobile div{
+  padding: 0 10px;
+  margin: 0 5px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.navbar-right .centralizer:hover, .nav-mobile .centralizer:hover{
+  transform: scale(1.2);
+}
+
+.navbar-right{
+  justify-content: flex-end;
+  height: 75px;
+}
+
+.burger{
+  right: 10px;
+  position: absolute;
+  width: 30px;
+  height: 24px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.burger div{
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  background-color: var(--regular);
+}
+
+.burger .line-1{
+  margin-top: 0;
+}
+
+.burger .line-2{
+  margin-top: 12px;
+}
+
+.burger .line-3{
+  margin-top: 24px;
+}
+
+.burger-active .line-1{
+  transform: translateY(12px) rotate(45deg);
+}
+.burger-active .line-2{
+  transform: rotate(45deg);
+}
+.burger-active .line-3{
+  transform: translateY(-12px) rotate(-45deg);
+}
+
+.light{
+  height: 25px;
+  width: 25px;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+}

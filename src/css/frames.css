@@ -1,0 +1,131 @@
+.choice{
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+
+.choice:hover{
+  transform: scale(1.2);
+}
+
+.project-link{
+  background-image: url('./../Assets/Footer/mywork.png');
+  margin-bottom: 25px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 450px;
+  border: 3px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.6s;
+  background-color: white;
+}
+
+.project-link:hover{
+  background-size: auto 125%;
+}
+
+.selected-frame{
+  border: 3px solid black;
+  pointer-events: none;
+}
+
+.frames-container{
+  height: 250px;
+  width: 450px;
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.frames-container:hover .frame-click{
+  opacity: 1;
+}
+
+.frames-container:hover .frame-container{
+  opacity: 0;
+}
+
+.frame-click{
+  height: 250px;
+  width: 450px;
+  background-color: black;
+  color: white;
+  opacity: 0;
+  text-align: center;
+}
+
+.frame-container{
+  height: 200px;
+  width: 130px;
+  margin: 25px 10px;
+
+}
+
+.frame-top, .frame-bottom{
+  height: 80px;
+  width: 110px;
+  margin: 15px 10px;
+}
+
+.frame-top{
+  border: 1px solid black;
+}
+
+.frame-line{
+  height: 3px;
+  width: 100%;
+  background-color: black;
+}
+
+.tablet .frames-container, .tablet .frame-click{
+  width: 375px;
+}
+
+.tablet .first .frame-top, .tablet .first .frame-bottom, .tablet .second .frame-top, .tablet .second .frame-top, .tablet .second .frame-bottom  {
+  height: 64px;
+  width: 80px;
+  transform: rotate(90deg);
+}
+
+.tablet .first .frame-line, .tablet .second .frame-line {
+  width: 70%;
+}
+.tablet .first .frame-bottom, .tablet .second .frame-bottom {
+  transform: translate(0, 10px) rotate(90deg);
+
+}
+
+.tablet .first, .tablet .second {
+  height: 160px;
+  width: 104px;
+  margin: 10px 21px;
+}
+
+.tablet .first {
+  transform: translate(30px,-55px) rotate(-90deg);
+}
+
+.tablet .second {
+  transform: translate(-112px,55px) rotate(-90deg);
+}
+
+.tablet .third {
+  transform: translate(-80px,-2px);
+}
+
+.phone .frames-container, .phone .frame-click{
+  width: 170px;
+}
+.phone .frame-container:nth-child(3), .phone .frame-container:nth-child(4){
+  transform: scale(0);
+}
+.phone .frame-container:nth-child(2){
+  transform: translate(10px,0);
+}
