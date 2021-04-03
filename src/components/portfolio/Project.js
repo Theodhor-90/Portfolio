@@ -24,7 +24,7 @@ const Project = (props) =>{
             :
             <div className="centralizer project-link-s" onClick={props.newTicket}>New</div>
           }
-            <div onClick={() => props.handleKey('contact')} className='centralizer project-link-s'>Ask for code</div>
+            <a href={props.project.github} target='blank' className='centralizer no-default project-link-s'>View Code</a>
           </div>
         </div>
       </div>

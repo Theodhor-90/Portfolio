@@ -33,20 +33,21 @@ const projects = [
     ticket: true,
     image: '',
     link: false,
-    description: 'A standard random bingo ticket generator made with JavaScript. ) '
-  },
-  {
-    title: 'Artmapper',
-    image: require('./../media/artmapper-2.png'),
-    link: 'https://art-mapper.herokuapp.com/',
-    description: 'A MERN app, made with MongoDB, Express, React and Node.js.'
+    description: 'A standard random bingo ticket generator made with JavaScript.'
   },
   {
     title: 'Bingo',
     github: 'https://github.com/Theodhor-90/Bingo-Game',
     image: require('./../media/bingo-3.png'),
     link: 'https://www.theodhorshyti.com/bingo.html',
-    description: 'A bingo game made with HTML5, CSS3 and JavaScript'
+    description: 'A bingo game made with HTML5, CSS3 and JavaScript.'
+  },
+  {
+    title: 'Artmapper',
+    github: 'https://github.com/Theodhor-90/Artmapper',
+    image: require('./../media/artmapper-2.png'),
+    link: 'https://art-mapper.herokuapp.com/',
+    description: 'A MERN app, made with MongoDB, Express, React and Node.js.'
   },
 
 ]

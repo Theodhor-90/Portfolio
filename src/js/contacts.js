@@ -21,7 +21,7 @@ const contacts = [
     icon: require('./../Assets/Footer/github.png'),
     text: 'Github',
     index: 4,
-    link: 'https://github.com/Theodhor'
+    link: 'https://github.com/Theodhor-90'
   },
 ]
 
